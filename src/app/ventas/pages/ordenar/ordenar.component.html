@@ -3,10 +3,36 @@
     <p>
         Pipes creados por {{ 'nosotros' | mayusculas:enMayusculas }} mismos:)
     </p>
-
-    <button 
-        pButton
-        label="toggle mayusculas"
-        (click)="convertirEnMayusculas()">
-    </button>
 </div>
+
+<p-toolbar>
+    <div class="p-toolbar-group-left"></div>
+    
+    <div class="p-toolbar-group-right">
+        <button 
+            pButton
+            label="toggle mayusculas"
+            class="p-mr-1"
+            (click)="convertirEnMayusculas()">
+        </button>
+        <button 
+            pButton 
+            icon="pi pi-sort" 
+            label="Por nombre" 
+            class="p-mr-1 p-button-warning">
+        </button>
+        <button 
+            pButton 
+            icon="pi pi-sort" 
+            label="Valores" 
+            class="p-mr-1 p-button-success"
+           >
+        </button>
+        <button 
+            pButton 
+            icon="pi pi-sort" 
+            label="Por color" 
+            class="p-mr-1 p-button-help">
+        </button>
+    </div>
+</p-toolbar>
